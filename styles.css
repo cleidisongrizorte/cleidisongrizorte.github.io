@@ -265,7 +265,7 @@ section.Lista-grafico-ind{
 
 .comunidade{
     text-align: center;
-    background: var(--fundo);    
+    background: var(--branco);    
     align-items: center;
     width: 100%;
     
@@ -366,32 +366,31 @@ section.Lista-grafico-ind{
 
 
 .menu-footer{
-     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
+    width: 100%;
+     display: flex;
+     background: var(--fundo);
+     justify-content: center;
 }
-.menu-fo{
-    display: grid;
-    
-    
-}
-.menu-footer a{
+
+.conteiner-menu-footer a{
+    width: 100%;
     text-decoration: none;
     color: var(--light-color);
     font-size: 2rem;
+    align-items: center;
+    padding: .5rem 1.5rem;
 }
-.menu-footer a:hover{
+.conteiner-menu-footer a:hover{
     color: var(--green);
 }
-.menu-footer h1{
-    font-size: 2rem;
-}
+
+
 .copyright{
-    background: var(--fundo);
+    background: var(--azul);
     font-size: 1.5rem;
     text-align: center;
     padding: .5rem;
-    color: var(--light-color);
+    color: var(--branco);
 }
 
 
@@ -463,7 +462,12 @@ section.Lista-grafico-ind{
         box-shadow: var(--box-shadow);
          cursor: pointer;   
         display: block;
-        align-items: center;       
+        align-items: center;
+        margin-top: 1%;       
+    }
+    .portfolio-images img:hover{
+        border-radius: 2rem;
+        margin-top: -6rem;
     }
     .portfolio-text span Strong{
         color: #FFA500;  
@@ -472,6 +476,25 @@ section.Lista-grafico-ind{
     .portfolio-text{ 
         margin-left: 8%;
         text-align: center;
+    }
+    .menu-footer{
+        height: 100%;
+         display: grid;
+         grid-template-columns: 1fr;
+         background: var(--fundo);
+         justify-content: center;
+    }
+    
+    .conteiner-menu-footer a{
+        
+        text-decoration: none;
+        color: var(--light-color);
+        font-size: 2rem;
+        align-items: center;
+        
+    }
+    .conteiner-menu-footer a:hover{
+        color: var(--green);
     }
     
 }
